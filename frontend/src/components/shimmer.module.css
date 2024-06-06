@@ -1,0 +1,70 @@
+.masterImage{
+    width:273px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    height: 276px;
+    background-image: linear-gradient(to right,grey, white);
+    background-size: 200%;
+    background-position: left;
+    animation: animation 300ms linear infinite alternate;
+
+}
+.name{
+    height:24px;
+    background-image: linear-gradient(to right,grey, white);
+    background-size: 200%;
+    background-position: left;
+    animation: animation 300ms linear infinite alternate;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.description{
+    height:12px;
+    width:200px;
+    background-image: linear-gradient(to right,grey, white);
+    background-size: 200%;
+    background-position: left;
+    animation: animation 300ms linear infinite alternate;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+.category{
+    border: 2px solid grey;
+    width: 80px;
+    padding:10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top:20px ;
+    height:10px;
+    position: relative;
+}
+
+.card{
+    border-radius: 20px;
+    padding:2rem;
+
+    border: 1px solid grey
+}
+.priceButtonFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price,.button{
+    height:20px;
+    width:60px;
+    background-image: linear-gradient(to right,grey, white);
+    background-size: 200%;
+    background-position: left;
+    animation: animation 300ms linear infinite alternate;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+@keyframes animation{
+    to{
+        background-position: right;
+    }
+}

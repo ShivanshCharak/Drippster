@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.gridContainer{
+    
+    display: grid;
+    max-width: 1200px;
+    margin: 100px auto;
+
+    
+    /* grid-template-columns: repeat(2, 1fr); */
+}
+.leftContainer > .SummerSale{
+    max-width: 200px;
+    font-size: 4rem;
+    font-family: Pacifico;
+    line-height: 70px;
+    color:hsl(137 100% 54%);
+
+}
+.fade{
+    filter: blur(10px);
+
+}
+.leftContainer >.email{
+    width:210px;
+    border: 2px solid gray;
+    padding:1rem;
+    background-color: inherit;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+.leftContainer >.email>input{
+    outline: none;
+    border: none;
+    background-color: inherit;
+    color:wheat
+
+
+}
+.firstLayer{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap:40px
+}
+.secondLayer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap:40px;
+    margin-top:20px
+}
+.secondLayer > .leftContainer,.rightContainer > .arrival{
+
+    color:wheat;
+    height: 300px;
+    width:400px;
+    border-radius:20px;
+    padding: 1rem;
+    background-color: #222122;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.top > span{
+    display: block;
+    font-size: 2rem;
+    max-width: 20px;
+}
+.top > img{
+    height: 100px;
+    width: 100px;
+}
+.arrival>.intro{
+    font-size: 1rem;
+    max-width: 10px;
+} 
+.arrival > button{
+    display: block;
+    margin-top:20px;
+    border: 2px solid grey;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: transparent;
+    color:wheat;
+    cursor:pointer
+}
+.rightContainer >.arrival{
+    width: 500px;
+    background-color:#222122;
+    margin-left: 200px;
+
+
+    /* height: ; */
+}
+.rightContainer >.arrival > .top > span{
+    max-width: 300px;
+
+}
+.rightContainer >.arrival > .top > img{
+    margin-left: 20px;
+    width:200px;
+    height: auto;
+}
+@media screen and (max-width: 1350px) {
+    .gridContainer {
+        /* background-color: wheat; */
+        display: grid;
+        max-width: 900px;
+    }
+    .rightContainer >img{
+        display: none;
+    }
+    .middleContainer >img{
+
+        width:600px;
+        height:auto;
+        border:10px;
+        margin-left:20% ;
+    }
+   .rightContainer > .arrival{
+    width:350px
+    }
+    .secondLayer >.rightContainer>.arrival{
+        width:460px
+    }
+   
+
+   
+  
+}

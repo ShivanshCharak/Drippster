@@ -1,0 +1,23 @@
+.buttonContainer{
+    display: flex;   
+    align-items: center;
+    border:2px solid grey;
+    padding: 0px 0px;
+    /* margin-left */
+}
+.op{
+  width:20px;
+  padding: 0px 0px;
+  height: 20px;
+  border: none;
+  color:grey;
+}
+.add{
+  border: none;
+  width:20px;
+  padding: 0px 0px;
+  color:rgb(107, 216, 107)
+}
+.button{
+  color:rgb(107, 216, 107)
+}

@@ -1,0 +1,20 @@
+.avatarUploader{
+    background-color: rgb(92, 92, 64);
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px  rgb(88, 88, 32);
+
+}
+
+.formContainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    /* align-items: center; */
+    max-width: 900px;
+    margin-left: 600px;
+    margin-top: 50px;
+    color:white;
+    font-family:Roboto;
+}

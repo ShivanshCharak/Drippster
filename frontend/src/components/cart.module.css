@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Pacifico&display=swap');
+.checkOut{
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-family: kosugi maru;
+    max-width: 100%;
+    color:white;
+    gap:100px;
+   
+}
+.cardDetailsContainer{
+    background-color: #4B3F43;
+    width:500px;
+    height: 750px;
+    border-radius: 20px;
+    padding:2rem;
+    margin-right: 80px;
+    position: relative;
+    z-index: 0;
+    font-family: kosugi maru;
+
+}
+.creditCard{
+    position: absolute;
+    z-index: 1000;
+    width:400px;
+    margin-left:170px;
+    border-radius: 10px;
+    height: 256px;
+    background-color: #2D2D34;
+    font-family: kosugi maru;
+    box-shadow: 0 0 10px #2D2D34 ;
+    
+}
+.chip{
+    font-family: kosugi maru;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.cardNumber > input{
+    /* background-color: #2D2D34; */
+    margin-top:90px;
+    width:50px;
+    padding: 0.25rem;
+    background-color: #2D2D34 ;
+    font-family: kosugi maru;
+    border:none;
+    margin-left: 40px;
+    color: white;
+    
+}
+/* Hide the up and down arrow buttons */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] { 
+  -moz-appearance: textfield; 
+ }
+
+.expiry>input{
+    width:50px;
+    padding:0.4rem;
+    background-color: #2D2D34;
+    border: none;
+    color:white;
+    margin-left: 40px;
+    font-family: kosugi maru;
+    margin-top:10px;
+
+}
+.expiry>input:focus{
+    outline:none;
+}
+.f>input{
+    background-color: inherit;
+    font-family: kosugi maru;
+    margin-top: 10px;
+}
+.cardNumber>input:focus{
+    outline: none;
+}
+.cardNumberForm{
+    /* position: absolute; */
+    display: flex;
+    font-family: kosugi maru;
+    align-items: center;
+    margin-top: 10px;
+    /* margin-left: -150px; */
+}
+
+.cardNumberForm>div >input:focus{
+    outline: none;
+}
+
+.cardNumberForm{
+    width: 450px;
+    color:white;
+    border: 1px solid white;
+    padding: 0.4rem;
+    display: flex;
+    font-family: kosugi maru;
+    flex-direction: column;
+}
+.cardNumberForm>label{
+    font-family: kosugi maru;
+    margin-right: 200px;
+    width: 200px;
+    font-family: kosugi maru;
+    margin-bottom: 10px;
+}
+.cvvContainer>div>input{
+    width:50px;
+    padding:0.25rem;
+    background-color: #2D2D34;
+    border: none;
+    color:white;
+    /* margin-left: 40px; */
+    font-family: kosugi maru;
+    margin-top:10px;
+}
+.cvvContainer>input:focus{
+    outline:none;
+}
+.cvvForm{
+    border:1px solid white;
+    padding:0.4rem;
+    margin-top:10px;
+    font-family: kosugi maru;
+}
+.leftContainer{
+    width: 450px;
+    color:white;
+    border: 1px solid white;
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    font-family: kosugi maru;
+    margin-top: 20px;
+    /* justify-content: space-between; */
+}
+.expiry>label{
+    font-family: kosugi maru;
+    margin-left: 40px;
+    font-family: kosugi maru;
+}
+.emptyCart{
+    display: flex;
+    margin: 25% 25%;
+
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.emptyCart > div{
+    margin-right: 20px;
+}
+.emptyCart > button{
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cvvForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 450px;
+    font-family: kosugi maru;
+}
+.rightContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px; font-family: kosugi maru;
+
+}
+.rightContainer > .cvv > div>input{
+    margin-top: 10px;
+    width:45px;
+    text-align: center;
+    background-color: inherit;
+    border:none;
+    font-family: kosugi maru;
+    color:white
+}
+.rightContainer > .cvv > div>label{
+
+    font-family: kosugi maru;
+    margin-left: 9px;
+}
+input:focus{
+    font-family: kosugi maru;
+    outline: none;
+}
+.secondRowCard{
+    font-family: kosugi maru;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cvv >label{
+    font-family: kosugi maru;
+    font-size: 0.8rem
+}
+
+.cvv>input{
+     /* font-family: kosugi maru; */
+    /* margin-left: 10px; */
+    margin-top: 10px;
+    border: none;
+    background-color: inherit;
+    color: white;
+}
+.masterCardHeader{
+    display: flex;
+    justify-content: space-between;
+    font-family: kosugi maru;
+    align-items: center;
+    /* background-color: pink; */
+}
+.name{
+    border:1px solid white;
+    width:450px;
+    height: 4rem;
+    font-family: kosugi maru;
+    /* height: 1rem; */
+    padding: 0.4rem;
+    margin-top:374px;
+}
+
+.holderName > input{
+    padding: 0.25rem;
+    font-family: kosugi maru;
+    border: none;
+    background-color: inherit;
+    color: white;;
+    margin-top: 10px;
+
+}
+.submit{
+    background-color: #3E517A;
+    color: white;
+    width:470px;
+    transition: background-color 250ms ease-in;
+    font-family: kosugi maru;
+    font-weight: 800;
+    font-size: 2rem;
+}
+.submit:hover{
+    background-color: #3e5e7a;
+    cursor: pointer;
+
+}
+.subTotal>span{
+    color:white;
+    font-size: 2rem;
+    position: absolute;
+    bottom:100px;
+    right:950px
+
+}
+@media screen and (max-width:900px){
+    
+}  
