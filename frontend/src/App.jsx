@@ -17,6 +17,7 @@ import Profile from './components/Profile';
 
 import Userdetails from './components/UserDetails'
 import Address from './components/Address';
+import CategoricalData from './components/CategoricalData';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Route path="/address" element={<Address />}/>
         <Route path="/auth" element={<Auth />} />
         <Route path="userDetails" element={<Userdetails/>}/>
+        <Route path="/category/:id" element={<CategoricalData/>}/>
         <Route path="*" element={<div>404 Not Found</div>} />
       </Routes>
 

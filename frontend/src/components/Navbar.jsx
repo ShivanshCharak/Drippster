@@ -43,9 +43,8 @@ function Navbar() {
             
         });
     }
-
-   
-
+    function handleChange(e){
+    }
     return (
         showNavbar && (
             <nav>
@@ -70,7 +69,7 @@ function Navbar() {
                     </div>
                     <div className={styles.rightContainer}>
                         <div className={styles.input}>
-                            <input type="text" />
+                            <input type="text" onChange={handleChange} />
                         </div>
                         {console.log(userDetails.username)}
                         {console.log(authType,accessToken)}

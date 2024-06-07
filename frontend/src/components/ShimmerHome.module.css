@@ -1,0 +1,15 @@
+.card{
+    width:400px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    height: 400px;
+    background-image: linear-gradient(to right,grey, white);
+    background-size: 200%;
+    background-position: left;
+    animation: animation 300ms linear infinite alternate;
+}
+@keyframes animation {
+    to{
+        background-position: right;
+    }
+}

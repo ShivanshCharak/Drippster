@@ -8,17 +8,12 @@
     
     /* grid-template-columns: repeat(2, 1fr); */
 }
-.leftContainer > .SummerSale{
-    max-width: 200px;
-    font-size: 4rem;
-    font-family: Pacifico;
-    line-height: 70px;
-    color:hsl(137 100% 54%);
-
-}
 .fade{
     filter: blur(10px);
 
+}
+.productName{
+    margin-top: 10px;
 }
 .leftContainer >.email{
     width:210px;
@@ -36,27 +31,27 @@
 
 
 }
+.secondLayer{
+    overflow: hidden;
+}
+.leftContainer > .SummerSale{
+    max-width: 200px;
+    font-size: 4rem;
+    font-family: Pacifico;
+    line-height: 70px;
+    color:hsl(137 100% 54%);
+
+}
+.secondLayer >.leftContainer{
+    width:1200px
+} 
 .firstLayer{
     min-height: 400px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap:40px
 }
-.secondLayer{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap:40px;
-    margin-top:20px
-}
-.secondLayer > .leftContainer,.rightContainer > .arrival{
 
-    color:wheat;
-    height: 300px;
-    width:400px;
-    border-radius:20px;
-    padding: 1rem;
-    background-color: #222122;
-}
 .top{
     display: flex;
     justify-content: space-between;
@@ -102,6 +97,66 @@
     width:200px;
     height: auto;
 }
+.slider{
+    display: flex;
+    gap:40px;
+    width:calc(400px * 5);
+
+    animation: scroll 40s infinite linear;
+}
+
+
+.card{
+    width:400px;
+    position: relative;
+    font-family: Roboto;
+}
+.sliderCategoryInfo {
+    position: absolute;   
+    width: 100%; 
+    text-align: center; 
+  }
+  
+  .sliderCategoryInfo > p {
+    position: absolute;
+    margin: 0; /* Remove default margin */
+    font-size: 3rem; /* Adjust font size as needed */
+    color: white;
+    inset: 0;
+    z-index: 10;
+
+    
+  }
+  
+  .goToStore {
+    position: absolute;
+    bottom: 10px; /* Adjust the distance from the bottom */
+    left: 33%; /* Center horizontally */
+    padding: 10px 20px;
+    z-index: 10;
+    font-weight: 500;
+    font-size: 1rem;
+
+  }
+  .goToStore:hover{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.938);
+  border-radius: 10px;
+    color:black
+  }
+
+.overlay{
+    position: absolute;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    z-index: 5;
+    inset: 0;
+    width: 400px;
+    height: 400px;
+}
+.img{
+    border-radius: 7px;
+    width:400px;
+}
 @media screen and (max-width: 1350px) {
     .gridContainer {
         /* background-color: wheat; */
@@ -121,11 +176,16 @@
    .rightContainer > .arrival{
     width:350px
     }
-    .secondLayer >.rightContainer>.arrival{
-        width:460px
-    }
-   
+
 
    
   
+}
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-1000px);
+  }
 }
