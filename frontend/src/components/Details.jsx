@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useContext } from 'react'
 import { ProductContext } from '../context/productInfoContext'
 import {useState} from 'react'
@@ -7,9 +7,20 @@ import { useParams } from 'react-router-dom'
 function Details() {
 
   const [buttonClicked,setButtonClicked] = useState(null)
-    const {productData} =useContext(ProductContext)
+  const [productData,setProductData] = useState(null)
+    // const {productData} =useContext(ProductContext)
+    
 
-    const data  = useParams()
+    const {id}  = useParams()
+
+    useEffect(()=>{
+      fetchData()
+    },[id])
+    async function fetchData() {
+      const response  = await fetch(`https://api.escuelajs.co/api/v1/products/${id}`)
+      const res = await response.json()
+      setProductData(res)
+    }
     function review(){
      Array.from(4,(index,value)=>{
       console.log(value)

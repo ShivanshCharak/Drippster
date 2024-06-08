@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 .cardContainer{
-    max-width: 900px;
+    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap:30px;
@@ -9,7 +9,7 @@
 }
 .masterImage >img{
     position: relative;
-    width:273px;
+    width:300px;
     height: auto;
     border: 1px solid grey;
     /* transform: scale(1); */
@@ -104,7 +104,7 @@
 .card{
     border-radius: 20px;
     padding:2rem;
-
+    width:300px;
     border: 1px solid grey
 }
 .name{

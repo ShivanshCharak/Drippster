@@ -37,7 +37,7 @@ function Cart() {
       setClientSecret(data.clientSecret)
       // console.log(data)
     }catch(error){
-      res.send(error.message)
+      // res.send(error.message)
     }
   }
   useEffect(() => {
